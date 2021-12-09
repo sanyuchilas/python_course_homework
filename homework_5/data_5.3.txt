@@ -1,0 +1,4 @@
+Bulochkin: 20_000
+Vasyechkin: 100_000
+Petrushkin: 123_131
+Kashinnesvarishn: 11_131
