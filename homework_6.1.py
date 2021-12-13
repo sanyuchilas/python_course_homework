@@ -1,21 +1,21 @@
 import time
 
 class TrafficLight:
-  color = 'red'
+  __color = 'red'
     
   def running(self):
     while True:
-      self.color = ('red')
-      print(self.color)
+      TrafficLight.__color = ('red')
+      print(TrafficLight.__color)
       time.sleep(7)
       
-      self.color = ('yellow')
-      print(self.color)
+      TrafficLight.__color = ('yellow')
+      print(TrafficLight.__color)
       time.sleep(2)
       
-      self.color = ('green')
+      TrafficLight.__color = ('green')
       time.sleep(5)
-      print(self.color)
+      print(TrafficLight.__color)
 
 
 traffic_light = TrafficLight()
