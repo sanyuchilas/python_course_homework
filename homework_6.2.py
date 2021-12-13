@@ -1,11 +1,15 @@
 class Road:
   length = 5000
   width = 20
+  
   def __init__(self, mass, thickness):
-    self.mass = self.mass
+    self.mass = mass
+    self.thickness = thickness
     
-    
-  def calculate_road_mass(self, mass, thickness):
-    return self.length * self.width * mass * thickness
+  def calculate_road_mass(self):
+    return self.length * self.width * self.mass * self.thickness
 
-print(f'{Road.calculate_road_mass(Road, 25, 5) // 1000} т')
+
+road = Road(25, 5)
+
+print(f'{road.calculate_road_mass() // 1000} т')
